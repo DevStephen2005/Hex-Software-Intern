@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stephen J — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Stephen J: bio, skills, experience, and contact information." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><span style="font-size: larger;">Portfolio</span>
+      </div>
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">Bio</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Internship Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-label="Introduction">
+      <div>
+        <!-- <span class="badge">Open to Internships · Frontend / MERN</span>  -->
+        <h1>Hi, I’m <strong>Stephen J</strong> — I build clean, fast web solutions.</h1>
+        <p class="lead">I’m a MERN-stack enthusiast who blends creativity with code to build user-friendly, high-performance apps that just work.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#contact">Contact Me</a>
+          <a class="btn" href="#experience">View Experience</a>
+        </div>
+      </div>
+      <!-- <div class="avatar card" aria-hidden="true">
+        <div class="inner">Add your photo or logo here</div>
+      </div> -->
+    </section>
+
+    <section id="about" class="about" aria-label="Bio">
+      <h2>Bio</h2>
+      <div class="grid-2">
+        <div class="card" style="padding:18px">
+          <p>I’m a B.E Computer Science And Engineering student based in India, with hands‑on experience across React, Node.js, Express, and MongoDB. I like turning ideas into products, improving UX, and automating workflows.</p>
+        </div>
+        <div class="card" style="padding:18px">
+          <p>Highlights: built an Exam Management System (MERN), designed responsive UIs with Tailwind, integrated secure authentication using JWT (Json Web Token)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="card" style="padding:18px">
+        <div class="skills-wrap" aria-label="Skill list">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript (ES6+)</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">Java</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-label="Experience">
+      <h2>Internship Experience</h2>
+      <div class="timeline">
+        <article class="item">
+          <h3>TechnoHacks</h3>
+          <div class="meta">Nov 2024 – Dec 2024  (Remote)</div>
+          <ul>
+            <li>Assisted in the programming and testing of web applications using HTML5, CSS3, and JavaScript.</li>
+            <li>Collaborated with cross-functional teams to integrate front-end technologies like React.js with backend
+            frameworks such as Node.js and Express.</li>
+            <li>Utilized MongoDB for efficient data storage and retrieval, ensuring seamless application performance.</li>
+          </ul>
+        </article>
+        
+        <article class="item">
+          <h3>Exam Registration Management System (Full Stack)</h3>
+          <div class="meta">2024 – 2025</div>
+          <ul>
+            <li>Developed a MERN stack application to manage student registration, register exams, exam scheduling.</li>
+            <li>Implemented a clean, responsive, and intuitive UI with React.js and TailwindCSS to enhance user
+            experience across devices.</li>
+            <li>Built a secure and scalable back-end using Node.js, Express.js, and
+            MongoDB, ensuring real-time updates and efficient data handling.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <h3>Get in touch</h3>
+          <p class="lead">Reach out for internships, freelance work, or collaborations.</p>
+          <p><strong>Email:</strong> <a href="mailto:stephen@example.com">devstephen15@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/stephen2005/">linkedin.com/in/stephen2005</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/DevStephen2005">github.com/DevStephen2005</a></p>
+          <p><strong>Location:</strong> TamilNadu, India</p>
+        </div>
+        <div class="card contact-card">
+          <h3>Quick message</h3>
+          <form action="mailto:stephen@example.com" method="post" enctype="text/plain">
+            <label>Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>Message
+              <textarea name="message" placeholder="Write your message..."></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Stephen J. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
