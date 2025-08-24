@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #f39c12;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+.home {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+.home h1 {
+  font-size: 3.5em;
+}
+.home h1 span {
+  color: #f39c12;
+}
+.home p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #f39c12;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background: #d35400;
+}
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+.section.dark {
+  background: #111;
+  color: #fff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-size: 1.1em;
+  transition: transform 0.3s;
+}
+.dark .card {
+  background: #222;
+  color: #fff;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.plan {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.plan.highlight {
+  border: 3px solid #f39c12;
+  transform: scale(1.05);
+}
+.plan h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.plan p {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+.plan ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.plan ul li {
+  margin: 6px 0;
+}
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input, 
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+.contact-form button {
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background: #111;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    transition: right 0.3s;
+  }
+  .navbar.active {
+    right: 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
