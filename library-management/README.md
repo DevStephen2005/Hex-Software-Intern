@@ -1,5 +1,5 @@
-# Simple-library-management
-DevRev's Simple library management page using HTML, CSS, JavaScript
+# library-management
+library management page using HTML, CSS, JavaScript
 <br>
 <br>
 <br>
@@ -7,7 +7,7 @@ DevRev's Simple library management page using HTML, CSS, JavaScript
 
 # Problem Statement
  <br /> 
-Build a simple library management page where <br>
+Build a library management page where <br>
   ● Users should be able to see the list of books <br>
   ○ Instead of loading all the results on the page, perform paging on the list of books – either implement 10 results per page or load on scroll will be a bonus
  <br>  ● Users should be able to filter the list of books based on Title, Author, Subject and Publish - date
